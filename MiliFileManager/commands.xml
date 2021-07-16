@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<ArrayOfCommands xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Commands>
+    <Command>cd</Command>
+    <Value>0</Value>
+    <Syntax>&lt;path/name&gt;</Syntax>
+    <Description>Смена текущего каталога. Можно использовать полный путь к каталогу &lt;path&gt; или имя каталога &lt;name&gt;в текущем каталоге. Вместо &lt;path/name&gt; может быть указано &lt;..&gt; - переход в родительский каталог (на 1 каталог вверх),  &lt;root&gt; - переход в корневой каталог.</Description>
+  </Commands>
+  <Commands>
+    <Command>list</Command>
+    <Value>0</Value>
+    <Syntax>&lt;path&gt;* &lt;att&gt;* &lt;page&gt;*</Syntax>
+    <Description>Просмотр содержимого каталога. Если путь не указан - выводится содержимое текущего каталога. Параметр &lt;att&gt; может иметь значение &lt;-p&gt; - постраничный вывод. Если &lt;p&gt; не указан, то выводится последняя страница. Параметр  &lt;page&gt; используется вместе с  &lt;att&gt; и выводит в окно дерева указанную страницу. Если указан &lt;att&gt; без &lt;page&gt;, то реализуется вывод всех страниц по нажатию любой клавиши. Сокращенный вариант комманды - ls.</Description>
+  </Commands>
+  <Commands>
+    <Command>ls</Command>
+    <Value>0</Value>
+    <Syntax>&lt;path&gt;* &lt;att&gt;* &lt;page&gt;*</Syntax>
+    <Description>Просмотр содержимого каталога. Если путь не указан - выводится содержимое текущего каталога. Параметр &lt;att&gt; может иметь значение &lt;-p&gt; - постраничный вывод. Если &lt;p&gt; не указан, то выводится последняя страница. Параметр  &lt;page&gt; используется вместе с  &lt;att&gt; и выводит в окно дерева указанную страницу. Если указан &lt;att&gt; без &lt;page&gt;, то реализуется вывод всех страниц по нажатию любой клавиши. Другой вариант комманды - ls.</Description>
+  </Commands>
+  <Commands>
+    <Command>copy</Command>
+    <Value>0</Value>
+    <Syntax>&lt;source/name&gt; &lt;target&gt;*</Syntax>
+    <Description>Копирование файлов и каталогов. Параметр &lt;source&gt; - полный путь к файлу или каталогу. Параметр &lt;name&gt; - имя файла или каталога в текущем каталоге. Параметр &lt;target&gt; - полный путь копии. Eсли указан &lt;target&gt;, то параметр &lt;source&gt; тоже должен быть указан. Если &lt;target&gt; отсутствует , то создается копия файла или каталога с добавлением порядкового номера в скобках - (n) - в текущем каталоге (&lt;name&gt;) или по указанному пути (&lt;source&gt;). Сокращенный вариант комманды - cp.</Description>
+  </Commands>
+  <Commands>
+    <Command>cp</Command>
+    <Value>0</Value>
+    <Syntax>&lt;source/name&gt; &lt;target&gt;*</Syntax>
+    <Description>Копирование файлов и каталогов. Параметр &lt;source&gt; - полный путь к файлу или каталогу. Параметр &lt;name&gt; - имя файла или каталога в текущем каталоге. Параметр &lt;target&gt; - полный путь копии. Eсли указан &lt;target&gt;, то должен быть указан параметр &lt;source&gt;. Если &lt;target&gt; отсутствует , то создается копия файла или каталога с добавлением порядкового номера в скобках - (n) - в текущем каталоге (&lt;name&gt;) или по указанному пути (&lt;source&gt;). Другой вариант  комманды - copy.</Description>
+  </Commands>
+  <Commands>
+    <Command>rm</Command>
+    <Value>0</Value>
+    <Syntax>&lt;path/name&gt;</Syntax>
+    <Description>Удаление файла. Паравметр &lt;path&gt; - полный путь к удаляемому файлу,  &lt;name&gt; - имя файла в текущем каталоге.</Description>
+  </Commands>
+  <Commands>
+    <Command>rmdir</Command>
+    <Value>0</Value>
+    <Syntax>&lt;path/name&gt;</Syntax>
+    <Description>Создание каталога. Паравметр &lt;path&gt; - полный путь к создаваемому каталогу,  &lt;name&gt; - имя нового каталога в текущем каталоге. Если каталог с указанным именем существует, то создается копия каталога с добавлением порядкового номера в скобках - (n).</Description>
+  </Commands>
+  <Commands>
+    <Command>mkdir</Command>
+    <Value>0</Value>
+    <Syntax>&lt;path/name&gt;</Syntax>
+    <Description>Создание каталога. Паравметр &lt;path&gt; - полный путь к создаваемому каталогу,  &lt;name&gt; - имя нового каталога в текущем каталоге. Если каталог с указанным именем существует, то создается копия каталога с добавлением порядкового номера в скобках - (n).</Description>
+  </Commands>
+  <Commands>
+    <Command>touch</Command>
+    <Value>0</Value>
+    <Syntax>&lt;path/name&gt;</Syntax>
+    <Description>Создание файла. Паравметр &lt;path&gt; - полный путь к создаваемому файлу,  &lt;name&gt; - имя нового файла в текущем каталоге. Если файл с указанным именем существует, то создается копия файла с добавлением порядкового номера в скобках - (n).</Description>
+  </Commands>
+  <Commands>
+    <Command>move</Command>
+    <Value>0</Value>
+    <Syntax>&lt;source&gt; &lt;target&gt;</Syntax>
+    <Description>Перемещение файлов и каталогов. Параметр &lt;source&gt; - полный путь к файлу или каталогу. Параметр &lt;target&gt; - полный путь назначения для файла или каталога. Сокращенный вариант комманды  - mv.</Description>
+  </Commands>
+  <Commands>
+    <Command>mv</Command>
+    <Value>0</Value>
+    <Syntax>&lt;source&gt; &lt;target&gt;</Syntax>
+    <Description>Перемещение файлов и каталогов. Параметр &lt;source&gt; - полный путь к файлу или каталогу. Параметр &lt;target&gt; - полный путь назначения для файла или каталога. Другой вариант  комманды - move.</Description>
+  </Commands>
+  <Commands>
+    <Command>rename</Command>
+    <Value>0</Value>
+    <Syntax>&lt;source/name&gt; &lt;target/name&gt;</Syntax>
+    <Description>Переименование файлов и каталогов. Параметр &lt;source&gt; - полный путь к файлу или каталогу. Параметр &lt;name&gt; - имя файла или каталога (старое и новое) в текущем каталоге. Параметр &lt;target&gt; - полный путь каталога с новым именем. Eсли указан &lt;source&gt;, то должен быть указан параметр &lt;target&gt;. Если указаны параметры &lt;name&gt; , то переименовать можно объект в текущем каталоге. Сокращенный вариант  комманды - nm.</Description>
+  </Commands>
+  <Commands>
+    <Command>nm</Command>
+    <Value>0</Value>
+    <Syntax>&lt;source/name&gt; &lt;target/name&gt;</Syntax>
+    <Description>Переименование файлов и каталогов. Параметр &lt;source&gt; - полный путь к файлу или каталогу. Параметр &lt;name&gt; - имя файла или каталога (старое и новое) в текущем каталоге. Параметр &lt;target&gt; - полный путь каталога с новым именем. Eсли указан &lt;source&gt;, то должен быть указан параметр &lt;target&gt;. Если указаны параметры &lt;name&gt; , то переименовать можно объект в текущем каталоге. Другой вариант  комманды - rename.</Description>
+  </Commands>
+  <Commands>
+    <Command>find</Command>
+    <Value>0</Value>
+    <Syntax>&lt;name&gt;</Syntax>
+    <Description>Поиск файла или каталога по имени в текущем каталоге и во всех подкаталогах. Выводит нумерованный список полных путей найденных файлов. Сокращенный вариант  комманды - fd.</Description>
+  </Commands>
+  <Commands>
+    <Command>fd</Command>
+    <Value>0</Value>
+    <Syntax>&lt;name&gt;</Syntax>
+    <Description>Поиск файла или каталога по имени в текущем каталоге и во всех подкаталогах. Выводит нумерованный список полных путей найденных файлов. Другой вариант  комманды - find.</Description>
+  </Commands>
+  <Commands>
+    <Command>info</Command>
+    <Value>0</Value>
+    <Syntax>&lt;path&gt;*</Syntax>
+    <Description>Вывод информации о файле или каталоге в блок инфоромации. Параметр &lt;path&gt; - полный путь к файлу или каталогу. Если &lt;path&gt; не указан - то выводится информация текущего каталога. </Description>
+  </Commands>
+  <Commands>
+    <Command>help</Command>
+    <Value>0</Value>
+    <Syntax>&lt;command&gt;*</Syntax>
+    <Description>Вывод информации о коммандах в окне сообщений. Если параметр &lt;command&gt; не указан, то выводится список всех комманд с синтаксисом постранично. Если указана комманда - то краткое описание комманды. Сокращенный вариант  комманды - h.</Description>
+  </Commands>
+  <Commands>
+    <Command>h</Command>
+    <Value>0</Value>
+    <Syntax>&lt;command&gt;*</Syntax>
+    <Description>Вывод информации о коммандах в окне сообщений. Если параметр &lt;command&gt; не указан, то выводится список всех комманд с синтаксисом постранично. Если указана комманда - то краткое описание комманды. Другой вариант  комманды - help.</Description>
+  </Commands>
+  <Commands>
+    <Command>config</Command>
+    <Value>0</Value>
+    <Syntax>&lt;att&gt; &lt;number&gt;*</Syntax>
+    <Description>Позволяет узнать или поменять заданое количество строк на странице при выводе дерева файловой системы. Параметр &lt;att&gt; имеет 2 значения: &lt;-i&gt; - информация, &lt;-c&gt; - конфигурирование. Параметр &lt;number&gt; -  задает количество строк при использовании параметра &lt;-c&gt;.</Description>
+  </Commands>
+  <Commands>
+    <Command>q</Command>
+    <Value>0</Value>
+    <Description>Выход из программы.</Description>
+  </Commands>
+  <Commands>
+    <Command>quit</Command>
+    <Value>0</Value>
+    <Description>Выход из программы.</Description>
+  </Commands>
+</ArrayOfCommands>

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiLiFileManager", "MliFileManager\MiLiFileManager.csproj", "{09BCEDAB-0696-4E17-A8B6-2BA52F29A7C2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09BCEDAB-0696-4E17-A8B6-2BA52F29A7C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09BCEDAB-0696-4E17-A8B6-2BA52F29A7C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09BCEDAB-0696-4E17-A8B6-2BA52F29A7C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09BCEDAB-0696-4E17-A8B6-2BA52F29A7C2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1FEC5CF6-FF34-48A6-8FB9-11D682A93054}
+	EndGlobalSection
+EndGlobal

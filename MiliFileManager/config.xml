@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<IOdata xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <StartDir>e:\repo</StartDir>
+  <InfoPath>e:\repo\dir1</InfoPath>
+  <Error>error.log</Error>
+  <Width>120</Width>
+  <Height>40</Height>
+  <Tabtop>3</Tabtop>
+  <Tab>4</Tab>
+  <NumberOfLines>19</NumberOfLines>
+  <Div>27</Div>
+  <Split>69</Split>
+  <VerticalBorder>124</VerticalBorder>
+  <HorizontalBorder>8212</HorizontalBorder>
+  <DivBorder>61</DivBorder>
+</IOdata>
